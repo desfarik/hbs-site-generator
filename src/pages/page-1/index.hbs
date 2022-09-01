@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style2.css">
+    <script type="module" async src="./page1.js"></script>
+    <base target="_blank">
+</head>
+<body>
+<h1>Hello, World!</h1>
+<img src="../../assets/promo-image.svg" alt="promo image">
+hui2
+
+{{#each items}}
+    <li>{{this}}</li>
+{{/each}}
+
+{{#component header}}
+    <div>inner code</div>
+    {{title}}
+{{/component}}
+<div class="css-image"></div>
+</body>
+</html>

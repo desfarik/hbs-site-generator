@@ -1,0 +1,21 @@
+{
+  "name": "hbs-site-generator",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "npm run clean && node dev-server.mjs",
+    "build": "npm run clean && node build.mjs",
+    "clean": "rm -rf ./dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/config-default": "^2.7.0",
+    "@parcel/core": "^2.7.0",
+    "@parcel/plugin": "^2.7.0",
+    "handlebars": "^4.7.7",
+    "parcel": "^2.7.0",
+    "parcel-transformer-hbs": "file:./plugins/parcel-transformer-hbs"
+  }
+}
